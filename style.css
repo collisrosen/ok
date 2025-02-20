@@ -1,0 +1,147 @@
+
+/* Go Back Button */
+a.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #141414; /* Solid black background */
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+a.back-btn:hover {
+    background-color: #333333; /* Dark gray background on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+a.back-btn:active {
+    background-color: #000000; /* Even darker background on click */
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow on click */
+}
+
+/* Body and Container Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('background.gif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings and Text */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3.links-header {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+/* Paragraph Styles */
+p.intro-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Button Styling */
+a.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.btn:hover {
+    background-color: #555555;
+    transform: translateY(-3px);
+}
+
+a.btn:active {
+    background-color: #b8b8b8;
+    transform: translateY(1px);
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.4em;
+    }
+
+    p.intro-text {
+        font-size: 1em;
+    }
+
+    a.btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
